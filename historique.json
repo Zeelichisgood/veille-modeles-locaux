@@ -3,6 +3,26 @@
   "description": "Historique des modèles déjà vus par la veille. Sert à ne signaler que les nouveautés. Ne contient aucune donnée personnelle.",
   "derniere_mise_a_jour": "2026-11-23",
   "modeles": {
+    "huggingface:1bit-MONSTER/Qwen3-4B-GGUF-loom:": {
+      "statut": "ecarte",
+      "raison": "taille du fichier quantifié non déterminée",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "1bit-MONSTER/Qwen3-4B-GGUF-loom",
+      "tag": null,
+      "taille_go": null,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/1bit-MONSTER/Qwen3-4B-GGUF-loom",
+      "description": ""
+    },
     "huggingface:3SENN/atelier-decisions:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
@@ -51,6 +71,54 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1-GGUF",
+      "description": ""
+    },
+    "huggingface:BH-Language-AI/bs-qwen35-9b-agent-nonthink-v08-gguf:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 17.92 Go >= 9.0 Go (budget mémoire) ; pas de français annoncé (langues: bs, hr, sr, en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "BH-Language-AI/bs-qwen35-9b-agent-nonthink-v08-gguf",
+      "tag": null,
+      "taille_go": 17.92,
+      "parametres_milliards": 9.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "bs",
+        "hr",
+        "sr",
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/BH-Language-AI/bs-qwen35-9b-agent-nonthink-v08-gguf",
+      "description": ""
+    },
+    "huggingface:BeriaLabs/Inkling-2-Mini-gollum-RC1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.61 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: en, es)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "BeriaLabs/Inkling-2-Mini-gollum-RC1-GGUF",
+      "tag": null,
+      "taille_go": 16.61,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "es"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/BeriaLabs/Inkling-2-Mini-gollum-RC1-GGUF",
       "description": ""
     },
     "huggingface:DeepNarra/Paham-Experimental:": {
@@ -119,6 +187,110 @@
       "source_url": "https://huggingface.co/Kaiennini365/Qwen2.5-1.5B-Instruct-Viet-SFT-Q5_K_M-GGUF",
       "description": ""
     },
+    "huggingface:KikoCis/Qwen3.8-27B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.81 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "KikoCis/Qwen3.8-27B-GGUF",
+      "tag": null,
+      "taille_go": 16.81,
+      "parametres_milliards": 27.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/KikoCis/Qwen3.8-27B-GGUF",
+      "description": ""
+    },
+    "huggingface:Lolaoaolak/Huihui-Qwen3.8-27B-abliterated-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.55 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Lolaoaolak/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "tag": null,
+      "taille_go": 16.55,
+      "parametres_milliards": 27.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Lolaoaolak/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "description": ""
+    },
+    "huggingface:Lucasgitguy-co/Qwen3.5-2B-Pi-Arete-36124c01-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md) ; licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Lucasgitguy-co/Qwen3.5-2B-Pi-Arete-36124c01-GGUF",
+      "tag": null,
+      "taille_go": 1.29,
+      "parametres_milliards": 2.0,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Lucasgitguy-co/Qwen3.5-2B-Pi-Arete-36124c01-GGUF",
+      "description": ""
+    },
+    "huggingface:Lysandra999/Senik-Dense-2B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Lysandra999/Senik-Dense-2B-GGUF",
+      "tag": null,
+      "taille_go": 1.56,
+      "parametres_milliards": 2.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Lysandra999/Senik-Dense-2B-GGUF",
+      "description": ""
+    },
+    "huggingface:Lysandra999/Senik-Quantum-1.7B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.7 Md (attendu 3.0–14.0 Md) ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Lysandra999/Senik-Quantum-1.7B-GGUF",
+      "tag": null,
+      "taille_go": 1.1,
+      "parametres_milliards": 1.7,
+      "licence": "other",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Lysandra999/Senik-Quantum-1.7B-GGUF",
+      "description": ""
+    },
     "huggingface:M-Alkassem/olmo-1b-reasoning-qlora-v1:": {
       "statut": "ecarte",
       "raison": "hors tranche : 1.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
@@ -139,6 +311,47 @@
       "quantification": "Q4_0",
       "commande_pull": null,
       "source_url": "https://huggingface.co/M-Alkassem/olmo-1b-reasoning-qlora-v1",
+      "description": ""
+    },
+    "huggingface:MBHudson/Autonomous-Loop-Studio:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "MBHudson/Autonomous-Loop-Studio",
+      "tag": null,
+      "taille_go": 8.42,
+      "parametres_milliards": null,
+      "licence": "mit",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/MBHudson/Autonomous-Loop-Studio",
+      "description": ""
+    },
+    "huggingface:MikhailSt/qwen35-9b-dflash-RCO-PQ2:": {
+      "statut": "vu",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "MikhailSt/qwen35-9b-dflash-RCO-PQ2",
+      "tag": null,
+      "taille_go": 0.57,
+      "parametres_milliards": 9.0,
+      "licence": "mit",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q2",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/MikhailSt/qwen35-9b-dflash-RCO-PQ2",
       "description": ""
     },
     "huggingface:Mikhailo/mova-tts:": {
@@ -186,6 +399,91 @@
       "source_url": "https://huggingface.co/MrLayen/plank-designer-v4-27b",
       "description": ""
     },
+    "huggingface:Piyush00023/coffy-3.2-flash-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en, code)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Piyush00023/coffy-3.2-flash-GGUF",
+      "tag": null,
+      "taille_go": 5.03,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "code"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Piyush00023/coffy-3.2-flash-GGUF",
+      "description": ""
+    },
+    "huggingface:Recogment/qwen3.5-9b-gguf:": {
+      "statut": "vu",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Recogment/qwen3.5-9b-gguf",
+      "tag": null,
+      "taille_go": 5.68,
+      "parametres_milliards": 9.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Recogment/qwen3.5-9b-gguf",
+      "description": ""
+    },
+    "huggingface:SevenDays3D/Qwen3-Coder-30B-A3B-Instruct:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 61.1 Go >= 9.0 Go (budget mémoire) ; hors tranche : 30.0 Md (attendu 3.0–14.0 Md) ; licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "SevenDays3D/Qwen3-Coder-30B-A3B-Instruct",
+      "tag": null,
+      "taille_go": 61.1,
+      "parametres_milliards": 30.0,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/SevenDays3D/Qwen3-Coder-30B-A3B-Instruct",
+      "description": ""
+    },
+    "huggingface:TRACCERR/Qwen3-VL-8B-Instruct-Cuneiform-v3_Nov2026:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en, sux)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "TRACCERR/Qwen3-VL-8B-Instruct-Cuneiform-v3_Nov2026",
+      "tag": null,
+      "taille_go": 5.03,
+      "parametres_milliards": 8.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "sux"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/TRACCERR/Qwen3-VL-8B-Instruct-Cuneiform-v3_Nov2026",
+      "description": ""
+    },
     "huggingface:White-Wolf13/Xing4.0-29B-A4B-APEX-GGUF:": {
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; hors tranche : 29.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en, zh)",
@@ -207,6 +505,28 @@
       "quantification": null,
       "commande_pull": null,
       "source_url": "https://huggingface.co/White-Wolf13/Xing4.0-29B-A4B-APEX-GGUF",
+      "description": ""
+    },
+    "huggingface:abuelos84/Spark-X2.6-4B-DSpark-Q8_0:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "abuelos84/Spark-X2.6-4B-DSpark-Q8_0",
+      "tag": null,
+      "taille_go": 0.67,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/abuelos84/Spark-X2.6-4B-DSpark-Q8_0",
       "description": ""
     },
     "huggingface:agentionai/Qwen3.8-27B-DFlash2-ROCmFP4-FAST-GGUF:": {
@@ -367,6 +687,26 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/ampixa/models-nocall",
+      "description": ""
+    },
+    "huggingface:bartowski/Inkling-2-Mini-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 18.66 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "bartowski/Inkling-2-Mini-GGUF",
+      "tag": null,
+      "taille_go": 18.66,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
       "description": ""
     },
     "huggingface:brunuu/PequeninaLM-GGUF:": {
@@ -552,6 +892,26 @@
       "source_url": "https://huggingface.co/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF",
       "description": ""
     },
+    "huggingface:kyssta/Qori-1:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "kyssta/Qori-1",
+      "tag": null,
+      "taille_go": 1.1,
+      "parametres_milliards": null,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/kyssta/Qori-1",
+      "description": ""
+    },
     "huggingface:lensetek/lensetek-edge-loop-3b-GGUF:": {
       "statut": "ecarte",
       "raison": "pas de français annoncé (langues: en, id, zh)",
@@ -683,6 +1043,28 @@
       "source_url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF",
       "description": ""
     },
+    "huggingface:mradermacher/Gemma-2-9b-it-chat-doctor_old-GGUF:": {
+      "statut": "ecarte",
+      "raison": "licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Gemma-2-9b-it-chat-doctor_old-GGUF",
+      "tag": null,
+      "taille_go": 5.76,
+      "parametres_milliards": 9.0,
+      "licence": null,
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Gemma-2-9b-it-chat-doctor_old-GGUF",
+      "description": ""
+    },
     "huggingface:mradermacher/Hush-Qwen2.5-7B-MST-GGUF:": {
       "statut": "ecarte",
       "raison": "licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
@@ -725,6 +1107,28 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/mradermacher/LingSante-3.1-air-VL-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Lunar-Huntress-0.2-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 18.69 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Lunar-Huntress-0.2-i1-GGUF",
+      "tag": null,
+      "taille_go": 18.69,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Lunar-Huntress-0.2-i1-GGUF",
       "description": ""
     },
     "huggingface:mradermacher/Lythri-Tada-4B-i1-GGUF:": {
@@ -901,6 +1305,74 @@
       "source_url": "https://huggingface.co/mrsirg97-rgb/osmos1.7b",
       "description": ""
     },
+    "huggingface:nihalmotukuri/actuator-7b-gguf:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "nihalmotukuri/actuator-7b-gguf",
+      "tag": null,
+      "taille_go": 4.68,
+      "parametres_milliards": 7.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/nihalmotukuri/actuator-7b-gguf",
+      "description": ""
+    },
+    "huggingface:onemunanoyo/Inkling-2-Mini-Abliterated-Aggressive-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.61 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: en, ja)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "onemunanoyo/Inkling-2-Mini-Abliterated-Aggressive-GGUF",
+      "tag": null,
+      "taille_go": 16.61,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-Aggressive-GGUF",
+      "description": ""
+    },
+    "huggingface:onemunanoyo/Inkling-2-Mini-Abliterated-Balanced-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.61 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: en, ja)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "onemunanoyo/Inkling-2-Mini-Abliterated-Balanced-GGUF",
+      "tag": null,
+      "taille_go": 16.61,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "ja"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/onemunanoyo/Inkling-2-Mini-Abliterated-Balanced-GGUF",
+      "description": ""
+    },
     "huggingface:opirs/OPIRS-Child-0.9-Laptop-GGUF:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
@@ -961,6 +1433,28 @@
       "source_url": "https://huggingface.co/opirs/OPIRS-Child-0.9-Workstation-GGUF",
       "description": ""
     },
+    "huggingface:protocolsyncllc/medgap-qwen-3.5-9b:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 9.79 Go >= 9.0 Go (budget mémoire) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "protocolsyncllc/medgap-qwen-3.5-9b",
+      "tag": null,
+      "taille_go": 9.79,
+      "parametres_milliards": 9.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/protocolsyncllc/medgap-qwen-3.5-9b",
+      "description": ""
+    },
     "huggingface:pumomo-ai/pumomo-models:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
@@ -981,6 +1475,50 @@
       "source_url": "https://huggingface.co/pumomo-ai/pumomo-models",
       "description": ""
     },
+    "huggingface:radiosilent/mbe-gemma4-26b-sysml:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.8 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "radiosilent/mbe-gemma4-26b-sysml",
+      "tag": null,
+      "taille_go": 16.8,
+      "parametres_milliards": 26.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/radiosilent/mbe-gemma4-26b-sysml",
+      "description": ""
+    },
+    "huggingface:salgr/SalgrAI_v2.1:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence 'gemma' non acceptée pour un usage pro (Licence propriétaire Google : usage permis mais avec clauses d'usage interdit (à lire avant usage pro).) ; pas de français annoncé (langues: ru)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "salgr/SalgrAI_v2.1",
+      "tag": null,
+      "taille_go": 0.1,
+      "parametres_milliards": null,
+      "licence": "gemma",
+      "langues": [
+        "ru"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/salgr/SalgrAI_v2.1",
+      "description": ""
+    },
     "huggingface:sebekblessing/wan22-gpu:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.)",
@@ -999,6 +1537,50 @@
       "quantification": "Q8",
       "commande_pull": null,
       "source_url": "https://huggingface.co/sebekblessing/wan22-gpu",
+      "description": ""
+    },
+    "huggingface:selorahomes/Selora-AI-LLM-1.7B-ollama:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.7 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "selorahomes/Selora-AI-LLM-1.7B-ollama",
+      "tag": null,
+      "taille_go": 1.42,
+      "parametres_milliards": 1.7,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q6_K",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama",
+      "description": ""
+    },
+    "huggingface:selorahomes/Selora-AI-LLM-14B-ollama:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 10.26 Go >= 9.0 Go (budget mémoire) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "selorahomes/Selora-AI-LLM-14B-ollama",
+      "tag": null,
+      "taille_go": 10.26,
+      "parametres_milliards": 14.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q5_K_S",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama",
       "description": ""
     },
     "huggingface:stde/scoder:": {

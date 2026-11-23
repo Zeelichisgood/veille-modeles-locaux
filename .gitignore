@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Fichiers de travail locaux
+.scratch/
+.DS_Store

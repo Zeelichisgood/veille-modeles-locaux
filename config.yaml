@@ -1,0 +1,161 @@
+# =====================================================================
+# config.yaml — toutes les règles de la veille, modifiables sans code
+# =====================================================================
+# Ce fichier ne contient aucune donnée personnelle ni aucune clé.
+# Chaque section est commentée en français.
+
+version: 1
+
+# ---------------------------------------------------------------------
+# Rapport
+# ---------------------------------------------------------------------
+rapport:
+  dossier: "rapports"          # dossier des rapports hebdomadaires (AAAA-MM-JJ.md)
+  langue: "fr"
+  fenetre_jours: 7             # une nouveauté = modèle absent de historique.json
+                               # (la fenêtre sert surtout aux sources datées, ex. HF)
+
+# ---------------------------------------------------------------------
+# Machine cible et budget mémoire (contrainte dure)
+# ---------------------------------------------------------------------
+machine:
+  description: "Mac M1, 16 Go de RAM unifiée, macOS, Ollama"
+  ram_totale_go: 16
+  budget_utile_go: 8           # mémoire disponible pour UN modèle chargé, contexte 8192 inclus
+
+budget_memoire:
+  # Un modèle est retenu si son fichier quantifié (Q4_K_M ou équiv.) fait
+  # STRICTEMENT moins de 9 Go. Au-delà, le swap sature (constaté à 15 Go+).
+  taille_fichier_max_go: 9.0
+  quantifications_visées: ["Q4_K_M", "Q4_K_S", "Q4_0", "Q5_K_M", "Q6_K", "IQ4_XS"]
+
+# ---------------------------------------------------------------------
+# Tranche de paramètres visée
+# ---------------------------------------------------------------------
+parametres:
+  min_milliards: 3.0           # en dessous de 3 Md : hors périmètre (sauf usage très ciblé)
+  max_milliards: 14.0          # au-dessus de 14 Md : hors périmètre
+  # Les modèles de 3 à 6 Md passent dans une catégorie à part, mise en
+  # surbrillance dans le rapport ("petits modèles spécialisés") car ils
+  # laissent de la marge mémoire.
+  petit_modele_max_milliards: 6.0
+
+# ---------------------------------------------------------------------
+# Modes d'installation acceptés (le modèle doit être utilisable en local)
+# ---------------------------------------------------------------------
+installable:
+  via_ollama: true             # disponible dans la bibliothèque Ollama
+  formats_locaux: ["gguf", "mlx"]   # ou fichier GGUF / MLX téléchargeable
+
+# ---------------------------------------------------------------------
+# Licences — LE FILTRE QUE TU PEUX AJUSTER
+# ---------------------------------------------------------------------
+# Chaque licence connue est listée avec :
+#   acceptee: true  -> le modèle passe le filtre (usage professionnel OK)
+#   acceptee: false -> le modèle est écarté, avec cette raison dans le rapport
+#   note:           -> explication en français, affichée telle quelle
+# Toute licence NON listée ici est traitée selon `regle_licence_inconnue`.
+licences:
+  regle_licence_inconnue: "refuser"   # refuser | signaler (signaler = retenu mais marqué « licence à vérifier »)
+  connues:
+    - { id: "apache-2.0",        acceptee: true,  note: "Permissive : usage commercial et redistribution autorisés." }
+    - { id: "mit",               acceptee: true,  note: "Permissive : usage commercial autorisé." }
+    - { id: "bsd-2-clause",      acceptee: true,  note: "Permissive : usage commercial autorisé." }
+    - { id: "bsd-3-clause",      acceptee: true,  note: "Permissive : usage commercial autorisé." }
+    - { id: "cc-by-4.0",         acceptee: true,  note: "Licence données (Creative Commons) : OK pour des poids, vérifier le contexte." }
+    - { id: "cc0-1.0",           acceptee: true,  note: "Domaine public." }
+    - { id: "mistral-community", acceptee: true,  note: "Open weights Mistral : usage commercial autorisé sous conditions (voir licence)." }
+    - { id: "qwen",              acceptee: true,  note: "Open weights Qwen (Apache 2.0 pour la plupart des versions récentes)." }
+    - { id: "llama3-community",  acceptee: true,  note: "Open weights Meta : usage commercial autorisé sous conditions (acceptation de la licence requise)." }
+    - { id: "llama3.1-community",acceptee: true,  note: "Idem llama3-community." }
+    - { id: "llama3.3-community",acceptee: true,  note: "Idem llama3-community." }
+    - { id: "gemma",             acceptee: false, note: "Licence propriétaire Google : usage permis mais avec clauses d'usage interdit (à lire avant usage pro)." }
+    - { id: "cc-by-nc-4.0",      acceptee: false, note: "Non commerciale : interdite pour un usage professionnel." }
+    - { id: "cc-by-nc-sa-4.0",   acceptee: false, note: "Non commerciale + share alike : interdite pour un usage professionnel." }
+    - { id: "qwen-research",     acceptee: false, note: "Licence recherche Qwen : PAS d'usage commercial." }
+    - { id: "llama2-community",  acceptee: false, note: "Licence Llama 2 : usage commercial soumis à autorisation au-delà d'un seuil." }
+    - { id: "gpl-3.0",           acceptee: false, note: "Copyleft : incompatible avec un usage professionnel embarqué." }
+    - { id: "proprietary",       acceptee: false, note: "Propriétaire : pas de garantie d'usage professionnel." }
+    - { id: "other",             acceptee: false, note: "Licence non reconnue : refusée par prudence." }
+
+# ---------------------------------------------------------------------
+# Langues
+# ---------------------------------------------------------------------
+langues:
+  # Si les langues annoncées sont connues et ne contiennent PAS le français,
+  # le modèle est écarté. Si rien n'est annoncé, il n'est pas écarté (on ne
+  # peut pas prouver l'absence de français) mais le rapport le signale.
+  exiger_francais_si_connues: true
+  codes_francais: ["fr", "french", "français", "multilingual", "multi"]
+
+# ---------------------------------------------------------------------
+# Mes modèles actuels (la référence à battre) et mes tâches
+# ---------------------------------------------------------------------
+modeles_actuels:
+  llm:
+    - { nom: "mistral-nemo", tag_ollama: "12b", parametres_milliards: 12, role: "référence générale (titrer, synthétiser, extraction)" }
+    - { nom: "qwen3.5",       tag_ollama: "9b",  parametres_milliards: 9,  role: "référence générale, bon en français" }
+    - { nom: "qwen3",         tag_ollama: "8b",  parametres_milliards: 8,  role: "référence générale" }
+    - { nom: "phi4",          tag_ollama: "14b", parametres_milliards: 14, role: "raisonnement" }
+    - { nom: "granite3.3",    tag_ollama: "8b",  parametres_milliards: 8,  role: "IBM, tâches structurées" }
+  embeddings:
+    nom: "nomic-embed-text"
+    tag_ollama: "latest"
+
+taches:
+  - "Titrer et synthétiser une note en français, format imposé, sans rien inventer"
+  - "Extraire décisions, actions, chiffres et dates d'une note, avec citation exacte"
+  - "Classer et trier des notes (catégories, niveau de confidentialité)"
+  - "Fusionner plusieurs notes proches en une fiche cohérente"
+  - "Répondre à une question transversale à partir de 2 ou 3 notes"
+  - "Français courant, contenu anglais fréquent, vocabulaire stratégie/vente/finance"
+  - "Critères éliminatoires : lenteur (> 3 min pour 9 000 caractères), inventions, mélange de langues, format non respecté"
+
+# ---------------------------------------------------------------------
+# Sources à interroger (API publiques, sans clé, lecture seule)
+# ---------------------------------------------------------------------
+sources:
+  requetes:
+    user_agent: "veille-modeles-locaux/1.0 (dépôt public GitHub, collecte hebdomadaire en lecture seule)"
+    delai_entre_requetes_secondes: 2.0   # politesse : délai entre chaque requête
+    timeout_secondes: 15
+    max_modeles_ollama: 25               # nb de modèles Ollama examinés (noms uniques, toutes pages)
+    max_modeles_hf: 100                  # nb de dépôts listés côté Hugging Face
+    max_fiches_hf: 30                    # nb max de fiches HF détaillées (tailles de fichiers)
+    max_termes_classements: 6            # nb max de noms cherchés dans les classements
+
+  ollama:
+    active: true
+    url_base: "https://ollama.com"
+    pages: ["/library?sort=newest", "/library?sort=updated"]
+    # robots.txt de ollama.com autorise /library et interdit /api/ : on ne
+    # touche donc qu'aux pages publiques de la bibliothèque.
+
+  huggingface:
+    active: true
+    api_base: "https://huggingface.co/api/models"
+    filtres_tags: ["gguf", "mlx"]        # dépôts contenant des fichiers GGUF ou MLX
+    tris: ["lastModified", "downloads"]  # récents + téléchargés
+
+  # Classements ouverts de référence (lecture seule). Chaque classement est
+  # optionnel : s'il est indisponible, le rapport écrit « non mesuré ».
+  classements:
+    - nom: "LMArena — Chatbot Arena (texte)"
+      type: "hf_datasets_server"
+      dataset: "lmarena-ai/leaderboard-dataset"
+      config: "text"
+      split: "latest"
+      actif: true
+      # champs du classement utilisés pour retrouver un modèle et son score
+      champ_modele: "model_name"
+      champ_score: "rating"
+      champ_rang: "rank"
+    - nom: "Open LLM Leaderboard"
+      type: "hf_datasets_server"
+      dataset: "open-llm-leaderboard/results"
+      config: "default"
+      split: "train"
+      actif: true
+      champ_modele: "model_name"
+      champ_score: "Average"
+      champ_rang: null

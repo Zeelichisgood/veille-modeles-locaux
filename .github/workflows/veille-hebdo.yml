@@ -43,6 +43,9 @@ jobs:
       - name: Lancer la veille (génère rapports/AAAA-MM-JJ.md + met à jour historique.json)
         run: python3 veille.py
 
+      - name: Générer la note Obsidian du rapport (dossier notes/ du projet)
+        run: python3 obsidian_sync.py --apply
+
       - name: Lancer les tests du filtrage
         run: python3 -m pytest tests/ -q
 
@@ -51,7 +54,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || git pull --rebase origin master || true
-          git add rapports/ historique.json JOURNAL.md
+          git add rapports/ notes/ historique.json JOURNAL.md
           if git diff --cached --quiet; then
             echo "Aucun changement cette semaine : rien à committer."
           else

@@ -35,9 +35,10 @@ veille-modeles-locaux/
 ├── config.yaml                    # TOUTES les règles modifiables (sans toucher au code)
 ├── historique.json                # modèles déjà vus (anti-doublon entre semaines)
 ├── veille.py                      # script principal (stdlib + requests + pyyaml)
-├── obsidian_sync.py               # pont vers Obsidian (LECTURE SEULE par défaut)
+├── obsidian_sync.py               # génère la note Obsidian de chaque run dans notes/
+├── notes/                         # notes datées prêtes pour Obsidian (une par rapport)
 ├── tests/test_filtrage.py         # tests pytest du filtrage (modèles fictifs)
-├── tests/test_obsidian_sync.py    # tests pytest du pont Obsidian
+├── tests/test_obsidian_sync.py    # tests pytest du générateur de notes
 ├── rapports/                      # un rapport par semaine : AAAA-MM-JJ.md
 └── .github/workflows/veille-hebdo.yml   # l'Action (cron mardi 03h00 UTC = 3h–6h heure française + manuel)
 ```
@@ -77,32 +78,22 @@ python3 veille.py --date 2026-11-30   # forcer une date
 python3 -m pytest tests/ -q       # tests du filtrage
 ```
 
-## Note Obsidian à chaque run
+## Note Obsidian à chaque run (en deux temps)
 
-Chaque rapport `rapports/AAAA-MM-JJ.md` peut devenir une **note datée dans ton vault Obsidian**
-(frontmatter `date`/`tags`/`source` + rapport complet) via `obsidian_sync.py`.
-
-**Par défaut, le script est en lecture seule** sur le vault : il liste les notes existantes et
-affiche ce qu'il écrirait, sans rien modifier. L'écriture n'est possible qu'avec
-`obsidian.ecriture_autorisee: true` dans `config.yaml` **et** la commande `--apply`.
+**Temps 1 (actif)** : chaque rapport `rapports/AAAA-MM-JJ.md` devient une **note datée** dans le
+dossier `notes/` **du projet** (ex. `notes/2026-11-24 - Veille modèles locaux.md`), prête pour
+Obsidian : frontmatter `date`/`tags`/`source` + rapport complet. C'est fait automatiquement par
+l'Action GitHub à chaque run (`python3 obsidian_sync.py --apply`), et à la main avec :
 
 ```bash
-# Voir ce qui serait écrit (aucune écriture) :
-python3 obsidian_sync.py
-
-# Écrire les notes manquantes (seulement si ecriture_autorisee: true) :
-python3 obsidian_sync.py --apply
+python3 obsidian_sync.py          # dry-run : affiche ce qui serait écrit, n'écrit rien
+python3 obsidian_sync.py --apply  # écrit les notes manquantes dans notes/
 ```
 
-Le vault n'étant pas lisible depuis la GitHub Action (elle tourne sur les serveurs de GitHub),
-la synchro se fait **côté Mac** : une fois le rapport poussé, exécute sur ta machine :
+Le script n'écrit **que** dans `notes/` (garde-fou : le chemin est vérifié pour rester dans le dépôt).
 
-```bash
-git -C "chemin/vers/veille-modeles-locaux" pull && python3 "chemin/vers/veille-modeles-locaux/obsidian_sync.py" --apply
-```
-
-À planifier par exemple le mardi matin après 6h (cron local / launchd), ou à la main.
-Avant cela, renseigne `obsidian.vault_path` dans `config.yaml` (chemin absolu de ton vault).
+**Temps 2 (plus tard)** : tu brancheras Obsidian sur ce dossier `notes/` (vault déplacé, synchro
+iCloud, plugin de sync…) — aucune écriture dans Obsidian n'est faite par ce dépôt.
 
 ## Coût et confidentialité
 

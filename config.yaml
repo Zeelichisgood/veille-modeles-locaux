@@ -161,16 +161,17 @@ sources:
       champ_rang: null
 
 # ---------------------------------------------------------------------
-# Pont Obsidian (note datée par run)
+# Notes Obsidian (en deux temps)
 # ---------------------------------------------------------------------
-# Chaque rapport rapports/AAAA-MM-JJ.md peut devenir une note dans ton vault
-# Obsidian via `obsidian_sync.py`. Par défaut : LECTURE SEULE (dry-run).
-# L'écriture dans le vault n'est possible qu'avec ecriture_autorisee: true
-# ET la commande `--apply`.
-obsidian:
+# Temps 1 (actif) : chaque rapport rapports/AAAA-MM-JJ.md devient une note
+# markdown prête pour Obsidian (frontmatter + contenu) dans le dossier
+# `notes/` DU PROJET, via `obsidian_sync.py`.
+# Temps 2 (plus tard) : Obsidian sera branché sur ce dossier notes/ — géré
+# hors de ce dépôt.
+# Sans `--apply`, le script est en dry-run (n'écrit rien).
+notes:
   active: true
-  vault_path: ""                       # à remplir : chemin absolu de ton vault (ex. "/Users/.../MonVault")
-  dossier_notes: "Veille modèles locaux"   # sous-dossier du vault recevant les notes
+  dossier: "notes"                          # dossier DANS le dépôt projet (garde-fou : reste dans le dépôt)
   format_nom: "{date} - Veille modèles locaux.md"
   tags: ["veille", "modèles-locaux"]
-  ecriture_autorisee: false            # passe à true UNIQUEMENT quand tu accordes l'accès en écriture
+  ecriture_autorisee: true                  # écriture dans notes/ du projet uniquement (pas dans Obsidian)

@@ -1,0 +1,73 @@
+---
+date: 2026-11-23
+source: rapports/2026-11-23.md (github.com/Zeelichisgood/veille-modeles-locaux)
+tags: [veille, modèles-locaux]
+type: veille-modeles-locaux
+---
+
+# Veille modèles locaux — rapport du 2026-11-23
+
+> Généré automatiquement par `veille.py` (GitHub Action, chaque lundi à 06h00 UTC, plus déclenchement manuel). Aucune donnée personnelle, aucune clé. Sources publiques en lecture seule. Machine cible : Mac M1 16 Go, budget 8 Go / modèle chargé, fichier quantifié < 9 Go, 3–14 Md de paramètres.
+
+## Verdict
+
+**Rien à tester cette semaine.**
+
+- **Constat** : aucun nouveau modèle ne passe à la fois le filtre mémoire (< 9.0 Go), la tranche de paramètres et le filtre de licence.
+- **Cause** : soit aucune nouveauté cette semaine, soit les nouveautés sont écartées (voir section 3 pour les raisons).
+- **Geste** : aucune action requise ; relancer la veille lundi prochain.
+
+## 1. Modèles retenus (nouveautés de la semaine)
+
+_Aucun modèle retenu cette semaine._
+
+## 2. Comparaison avec mes modèles actuels (tâche par tâche)
+
+_Pas de candidat à comparer cette semaine._
+
+## 3. Modèles écartés (une ligne par raison)
+
+- `frankmorales2020/granite-4.0-h-small-topo-triton-Q8_0-GGUF` (huggingface) — trop gros : 34.26 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé.
+- `sebekblessing/wan22-gpu` (huggingface) — nombre de paramètres non déterminé ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.).
+- `unsloth/Inkling-2-Mini-GGUF` (huggingface) — trop gros : 16.61 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé.
+- `pumomo-ai/pumomo-models` (huggingface) — nombre de paramètres non déterminé.
+- `3SENN/atelier-decisions` (huggingface) — nombre de paramètres non déterminé.
+- `mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF` (huggingface) — trop gros : 16.55 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en).
+- `ccore/CCORE-Web-Coder-4B` (huggingface) — pas de français annoncé (langues: en).
+- `mradermacher/law-LLM-13B-GGUF` (huggingface) — licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en).
+- `mradermacher/krx-q25-7b-sft-v2-GGUF` (huggingface) — pas de français annoncé (langues: en).
+- `mradermacher/Codex-24B-Small-3.2-GGUF` (huggingface) — trop gros : 14.33 Go >= 9.0 Go (budget mémoire) ; hors tranche : 24.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en).
+- `Aleph-Alpha/Kolibri-1.1-GGUF` (huggingface) — trop gros : 45.51 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: de, en).
+- `mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF` (huggingface) — pas de français annoncé (langues: en, zh).
+- `mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF` (huggingface) — trop gros : 16.8 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md) ; licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en).
+- `mradermacher/Smaug-Humanizer-i1-GGUF` (huggingface) — nombre de paramètres non déterminé ; pas de français annoncé (langues: en).
+- `mradermacher/Lythri-Tada-4B-i1-GGUF` (huggingface) — pas de français annoncé (langues: en).
+- `Kaiennini365/Qwen2.5-1.5B-Instruct-Viet-SFT-Q5_K_M-GGUF` (huggingface) — hors tranche : 1.5 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: vi, en).
+- `Interchained/Inkling-2-Mini-GGUF` (huggingface) — trop gros : 17.48 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser).
+- `ampixa/models-nocall` (huggingface) — nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser).
+- `Mikhailo/mova-tts` (huggingface) — nombre de paramètres non déterminé ; pas de français annoncé (langues: uk).
+- `MrLayen/plank-designer-v4-27b` (huggingface) — trop gros : 22.08 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en, de).
+- `M-Alkassem/olmo-1b-reasoning-qlora-v1` (huggingface) — hors tranche : 1.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en).
+- `dariolucas93/Qwen3-1.7B-Q8_0-GGUF` (huggingface) — hors tranche : 1.7 Md (attendu 3.0–14.0 Md).
+- `manhhoangvipbao/lor-model` (huggingface) — nombre de paramètres non déterminé.
+- `dariolucas93/Qwen3-1.7B-Q4_K_M-GGUF` (huggingface) — hors tranche : 1.7 Md (attendu 3.0–14.0 Md).
+- `lensetek/lensetek-edge-loop-3b-GGUF` (huggingface) — pas de français annoncé (langues: en, id, zh).
+- `walissoncasonatto/gemma-4-e4b-netops` (huggingface) — pas de français annoncé (langues: en, pt).
+
+## 4. Alertes sur mes modèles actuels
+
+- Aucune alerte : tous les modèles actuels sont toujours présents.
+
+## 5. Sources interrogées cette semaine
+
+| Source | Statut | Détail |
+|---|---|---|
+| Ollama (ollama.com/library) | ✅ OK | 57 version(s) de modèles examinée(s) |
+| Hugging Face (api/models, gguf + mlx) | ✅ OK | 30 dépôt(s) examiné(s) |
+| Classements ouverts (LMArena, Open LLM Leaderboard) | ✅ OK | 4 score(s) trouvé(s) pour 5 terme(s) |
+
+Avertissements :
+- Classement 'Open LLM Leaderboard' : indisponible (HTTPError: 500 Server Error: Internal Server Error for url: https://datasets-server.huggingface.co/filter?dataset=open-llm-leaderboard%2Fresults&config=default&split=train&where=%22model_name%22+ILIKE+%27%25granite3.%25%27&offset=0&length=20)
+
+---
+*Rapport généré le 2026-11-23 (UTC) par `veille.py`. Les scores cités proviennent de classements publics en lecture seule ; « non mesuré » = aucune donnée fiable trouvée. Aucun chiffre n'est estimé ou inventé.*

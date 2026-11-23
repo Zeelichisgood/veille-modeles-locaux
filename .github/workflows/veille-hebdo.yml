@@ -1,6 +1,10 @@
 # =====================================================================
 # Veille hebdomadaire des modèles de langage locaux
-# - cron : chaque lundi à 06h00 UTC
+# - cron : chaque MARDI à 03h00 UTC, soit entre 3h et 6h du matin en
+#   heure française toute l'année (UTC+1 en hiver -> 4h, UTC+2 en
+#   été -> 5h). Le cron GitHub ne connaît que l'UTC : 03h00 UTC est le
+#   choix qui reste dans la fenêtre 3h-6h FR même avec le changement
+#   d'heure (02h00-03h59 UTC conviendrait aussi).
 # - déclenchement manuel : onglet "Actions" du dépôt sur GitHub
 # Coût : 0 € (dépôt public = minutes GitHub Actions gratuites).
 # Aucune clé API requise : le script n'interroge que des API publiques.
@@ -10,7 +14,7 @@ name: Veille hebdomadaire des modèles locaux
 
 on:
   schedule:
-    - cron: "0 6 * * 1"        # lundi 06h00 UTC
+    - cron: "0 3 * * 2"        # mardi 03h00 UTC = 4h (hiver) / 5h (été) heure française
   workflow_dispatch:           # déclenchement manuel depuis l'onglet Actions
 
 # Un seul run à la fois : si un run manuel chevauche le cron, le plus récent gagne.

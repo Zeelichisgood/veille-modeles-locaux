@@ -11,7 +11,7 @@ Toutes les sources interrogées sont des API publiques en lecture seule.
 
 ## Comment ça marche, en simple
 
-1. Chaque **lundi à 06h00 UTC** (et sur demande manuelle), une **GitHub Action** exécute `veille.py`.
+1. Chaque **mardi entre 3h et 6h du matin, heure française** (cron GitHub : mardi 03h00 UTC = 4h en hiver, 5h en été ; et sur demande manuelle), une **GitHub Action** exécute `veille.py`.
 2. `veille.py` interroge les sources publiques :
    - la **bibliothèque Ollama** (`ollama.com/library`, pages publiques uniquement — `robots.txt` est respecté, avec un délai entre les requêtes et un User-Agent clair) ;
    - l'**API Hugging Face** (`huggingface.co/api/models`) : modèles récents et téléchargés, filtrés sur les dépôts **GGUF** ou **MLX** ;
@@ -37,7 +37,7 @@ veille-modeles-locaux/
 ├── veille.py                      # script principal (stdlib + requests + pyyaml)
 ├── tests/test_filtrage.py         # tests pytest du filtrage (modèles fictifs)
 ├── rapports/                      # un rapport par semaine : AAAA-MM-JJ.md
-└── .github/workflows/veille-hebdo.yml   # l'Action (cron lundi 06h00 UTC + manuel)
+└── .github/workflows/veille-hebdo.yml   # l'Action (cron mardi 03h00 UTC = 3h–6h heure française + manuel)
 ```
 
 ## Le rapport hebdomadaire (`rapports/AAAA-MM-JJ.md`)

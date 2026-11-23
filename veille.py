@@ -659,8 +659,8 @@ def generer_rapport(date_rapport: str, retenus: list[Modele], ecartes: list[tupl
     L: list[str] = []
     L.append(f"# Veille modèles locaux — rapport du {date_rapport}")
     L.append("")
-    L.append("> Généré automatiquement par `veille.py` (GitHub Action, chaque lundi à 06h00 UTC, "
-             "plus déclenchement manuel). Aucune donnée personnelle, aucune clé. Sources publiques "
+    L.append("> Généré automatiquement par `veille.py` (GitHub Action, chaque mardi entre 3h et 6h "
+             "heure française, plus déclenchement manuel). Aucune donnée personnelle, aucune clé. Sources publiques "
              "en lecture seule. Machine cible : Mac M1 16 Go, budget 8 Go / modèle chargé, "
              "fichier quantifié < 9 Go, 3–14 Md de paramètres.")
     L.append("")
@@ -689,7 +689,7 @@ def generer_rapport(date_rapport: str, retenus: list[Modele], ecartes: list[tupl
                  "et le filtre de licence.")
         L.append("- **Cause** : soit aucune nouveauté cette semaine, soit les nouveautés sont "
                  "écartées (voir section 3 pour les raisons).")
-        L.append("- **Geste** : aucune action requise ; relancer la veille lundi prochain.")
+        L.append("- **Geste** : aucune action requise ; relancer la veille mardi prochain entre 3h et 6h (heure française).")
     L.append("")
 
     # ------------------------------------------------------------------
@@ -889,7 +889,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     journaliser(Path(args.journal), date_rapport, f"rapports/{date_rapport}.md",
                 f"Rapport de veille généré : {len(retenus_nouveaux)} candidat(s) retenu(s), "
                 f"{len(ecartes_nouveaux)} écarté(s), {len(alertes)} alerte(s).",
-                "Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel).")
+                "Exécution hebdomadaire (cron mardi 03h00 UTC = 3h–6h heure française, ou manuel).")
 
     # --- 6. Résumé console
     print(f"Rapport écrit : {chemin_rapport}")

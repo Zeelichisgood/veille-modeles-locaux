@@ -33,8 +33,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Installer les dépendances (requests, pyyaml)
-        run: pip install requests pyyaml
+      - name: Installer les dépendances (requests, pyyaml, pytest)
+        run: pip install requests pyyaml pytest
 
       - name: Lancer la veille (génère rapports/AAAA-MM-JJ.md + met à jour historique.json)
         run: python3 veille.py

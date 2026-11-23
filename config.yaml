@@ -159,3 +159,18 @@ sources:
       champ_modele: "model_name"
       champ_score: "Average"
       champ_rang: null
+
+# ---------------------------------------------------------------------
+# Pont Obsidian (note datée par run)
+# ---------------------------------------------------------------------
+# Chaque rapport rapports/AAAA-MM-JJ.md peut devenir une note dans ton vault
+# Obsidian via `obsidian_sync.py`. Par défaut : LECTURE SEULE (dry-run).
+# L'écriture dans le vault n'est possible qu'avec ecriture_autorisee: true
+# ET la commande `--apply`.
+obsidian:
+  active: true
+  vault_path: ""                       # à remplir : chemin absolu de ton vault (ex. "/Users/.../MonVault")
+  dossier_notes: "Veille modèles locaux"   # sous-dossier du vault recevant les notes
+  format_nom: "{date} - Veille modèles locaux.md"
+  tags: ["veille", "modèles-locaux"]
+  ecriture_autorisee: false            # passe à true UNIQUEMENT quand tu accordes l'accès en écriture

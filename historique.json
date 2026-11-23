@@ -3,6 +3,56 @@
   "description": "Historique des modèles déjà vus par la veille. Sert à ne signaler que les nouveautés. Ne contient aucune donnée personnelle.",
   "derniere_mise_a_jour": "2026-11-23",
   "modeles": {
+    "huggingface:3SENN/atelier-decisions:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "3SENN/atelier-decisions",
+      "tag": null,
+      "taille_go": 1.29,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "multilingual",
+        "en",
+        "nl",
+        "de",
+        "fr",
+        "es"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/3SENN/atelier-decisions",
+      "description": ""
+    },
+    "huggingface:Aleph-Alpha/Kolibri-1.1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 45.51 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: de, en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Aleph-Alpha/Kolibri-1.1-GGUF",
+      "tag": null,
+      "taille_go": 45.51,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "de",
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1-GGUF",
+      "description": ""
+    },
     "huggingface:DeepNarra/Paham-Experimental:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
@@ -24,6 +74,116 @@
       "quantification": null,
       "commande_pull": null,
       "source_url": "https://huggingface.co/DeepNarra/Paham-Experimental",
+      "description": ""
+    },
+    "huggingface:Interchained/Inkling-2-Mini-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 17.48 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Interchained/Inkling-2-Mini-GGUF",
+      "tag": null,
+      "taille_go": 17.48,
+      "parametres_milliards": null,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Interchained/Inkling-2-Mini-GGUF",
+      "description": ""
+    },
+    "huggingface:Kaiennini365/Qwen2.5-1.5B-Instruct-Viet-SFT-Q5_K_M-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.5 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: vi, en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Kaiennini365/Qwen2.5-1.5B-Instruct-Viet-SFT-Q5_K_M-GGUF",
+      "tag": null,
+      "taille_go": 1.13,
+      "parametres_milliards": 1.5,
+      "licence": "apache-2.0",
+      "langues": [
+        "vi",
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q5_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Kaiennini365/Qwen2.5-1.5B-Instruct-Viet-SFT-Q5_K_M-GGUF",
+      "description": ""
+    },
+    "huggingface:M-Alkassem/olmo-1b-reasoning-qlora-v1:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "M-Alkassem/olmo-1b-reasoning-qlora-v1",
+      "tag": null,
+      "taille_go": 0.89,
+      "parametres_milliards": 1.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/M-Alkassem/olmo-1b-reasoning-qlora-v1",
+      "description": ""
+    },
+    "huggingface:Mikhailo/mova-tts:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: uk)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "Mikhailo/mova-tts",
+      "tag": null,
+      "taille_go": 0.6,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "uk"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Mikhailo/mova-tts",
+      "description": ""
+    },
+    "huggingface:MrLayen/plank-designer-v4-27b:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 22.08 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en, de)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "MrLayen/plank-designer-v4-27b",
+      "tag": null,
+      "taille_go": 22.08,
+      "parametres_milliards": 27.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "de"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/MrLayen/plank-designer-v4-27b",
       "description": ""
     },
     "huggingface:White-Wolf13/Xing4.0-29B-A4B-APEX-GGUF:": {
@@ -189,6 +349,26 @@
       "source_url": "https://huggingface.co/agentionai/Signal-3.8-Flash-Next-GGUF",
       "description": ""
     },
+    "huggingface:ampixa/models-nocall:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "ampixa/models-nocall",
+      "tag": null,
+      "taille_go": 3.42,
+      "parametres_milliards": null,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/ampixa/models-nocall",
+      "description": ""
+    },
     "huggingface:brunuu/PequeninaLM-GGUF:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: pt)",
@@ -209,6 +389,88 @@
       "quantification": null,
       "commande_pull": null,
       "source_url": "https://huggingface.co/brunuu/PequeninaLM-GGUF",
+      "description": ""
+    },
+    "huggingface:ccore/CCORE-Web-Coder-4B:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "ccore/CCORE-Web-Coder-4B",
+      "tag": null,
+      "taille_go": 2.71,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/ccore/CCORE-Web-Coder-4B",
+      "description": ""
+    },
+    "huggingface:dariolucas93/Qwen3-1.7B-Q4_K_M-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.7 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "dariolucas93/Qwen3-1.7B-Q4_K_M-GGUF",
+      "tag": null,
+      "taille_go": 1.28,
+      "parametres_milliards": 1.7,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/dariolucas93/Qwen3-1.7B-Q4_K_M-GGUF",
+      "description": ""
+    },
+    "huggingface:dariolucas93/Qwen3-1.7B-Q8_0-GGUF:": {
+      "statut": "ecarte",
+      "raison": "hors tranche : 1.7 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "dariolucas93/Qwen3-1.7B-Q8_0-GGUF",
+      "tag": null,
+      "taille_go": 2.17,
+      "parametres_milliards": 1.7,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/dariolucas93/Qwen3-1.7B-Q8_0-GGUF",
+      "description": ""
+    },
+    "huggingface:frankmorales2020/granite-4.0-h-small-topo-triton-Q8_0-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 34.26 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "frankmorales2020/granite-4.0-h-small-topo-triton-Q8_0-GGUF",
+      "tag": null,
+      "taille_go": 34.26,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/frankmorales2020/granite-4.0-h-small-topo-triton-Q8_0-GGUF",
       "description": ""
     },
     "huggingface:fylume/yaob-next-c4b-n10k:": {
@@ -290,6 +552,50 @@
       "source_url": "https://huggingface.co/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF",
       "description": ""
     },
+    "huggingface:lensetek/lensetek-edge-loop-3b-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en, id, zh)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "lensetek/lensetek-edge-loop-3b-GGUF",
+      "tag": null,
+      "taille_go": 1.93,
+      "parametres_milliards": 3.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "id",
+        "zh"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/lensetek/lensetek-edge-loop-3b-GGUF",
+      "description": ""
+    },
+    "huggingface:manhhoangvipbao/lor-model:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "manhhoangvipbao/lor-model",
+      "tag": null,
+      "taille_go": 1.29,
+      "parametres_milliards": null,
+      "licence": "mit",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/manhhoangvipbao/lor-model",
+      "description": ""
+    },
     "huggingface:mindsofchaos/codeoptics-coder-3b-v5:": {
       "statut": "ecarte",
       "raison": "licence inconnue (règle par défaut : refuser)",
@@ -330,6 +636,51 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/mradermacher/Behemoth_1.1_1.2_2.2_Magnum_V4-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Codex-24B-Small-3.2-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 14.33 Go >= 9.0 Go (budget mémoire) ; hors tranche : 24.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Codex-24B-Small-3.2-GGUF",
+      "tag": null,
+      "taille_go": 14.33,
+      "parametres_milliards": 24.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Codex-24B-Small-3.2-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en, zh)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF",
+      "tag": null,
+      "taille_go": 2.78,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "zh"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-GGUF",
       "description": ""
     },
     "huggingface:mradermacher/Hush-Qwen2.5-7B-MST-GGUF:": {
@@ -374,6 +725,138 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/mradermacher/LingSante-3.1-air-VL-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Lythri-Tada-4B-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Lythri-Tada-4B-i1-GGUF",
+      "tag": null,
+      "taille_go": 3.42,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Lythri-Tada-4B-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.55 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF",
+      "tag": null,
+      "taille_go": 16.55,
+      "parametres_milliards": 27.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Smaug-Humanizer-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Smaug-Humanizer-i1-GGUF",
+      "tag": null,
+      "taille_go": 7.38,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.8 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md) ; licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF",
+      "tag": null,
+      "taille_go": 16.8,
+      "parametres_milliards": 26.0,
+      "licence": null,
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/krx-q25-7b-sft-v2-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/krx-q25-7b-sft-v2-GGUF",
+      "tag": null,
+      "taille_go": 4.68,
+      "parametres_milliards": 7.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q25",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/krx-q25-7b-sft-v2-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/law-LLM-13B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "mradermacher/law-LLM-13B-GGUF",
+      "tag": null,
+      "taille_go": 7.87,
+      "parametres_milliards": 13.0,
+      "licence": null,
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/law-LLM-13B-GGUF",
       "description": ""
     },
     "huggingface:mroaw/gemma-4-E4B-it-heretic-unslop-GGUF:": {
@@ -476,6 +959,46 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/opirs/OPIRS-Child-0.9-Workstation-GGUF",
+      "description": ""
+    },
+    "huggingface:pumomo-ai/pumomo-models:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "pumomo-ai/pumomo-models",
+      "tag": null,
+      "taille_go": 2.5,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/pumomo-ai/pumomo-models",
+      "description": ""
+    },
+    "huggingface:sebekblessing/wan22-gpu:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "sebekblessing/wan22-gpu",
+      "tag": null,
+      "taille_go": 5.38,
+      "parametres_milliards": null,
+      "licence": "other",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/sebekblessing/wan22-gpu",
       "description": ""
     },
     "huggingface:stde/scoder:": {
@@ -587,6 +1110,26 @@
       "source_url": "https://huggingface.co/tracinginsights/tif1-lfm3-runs",
       "description": ""
     },
+    "huggingface:unsloth/Inkling-2-Mini-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.61 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "unsloth/Inkling-2-Mini-GGUF",
+      "tag": null,
+      "taille_go": 16.61,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "description": ""
+    },
     "huggingface:ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2-cashback:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
@@ -605,6 +1148,29 @@
       "quantification": "Q8",
       "commande_pull": null,
       "source_url": "https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2-cashback",
+      "description": ""
+    },
+    "huggingface:walissoncasonatto/gemma-4-e4b-netops:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en, pt)",
+      "premiere_observation": "2026-11-23",
+      "vu_le": "2026-11-23",
+      "source": "huggingface",
+      "nom": "walissoncasonatto/gemma-4-e4b-netops",
+      "tag": null,
+      "taille_go": 7.95,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en",
+        "pt"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/walissoncasonatto/gemma-4-e4b-netops",
       "description": ""
     },
     "huggingface:zeeebraa5/neuro-sama-12B_v0.3.5:": {

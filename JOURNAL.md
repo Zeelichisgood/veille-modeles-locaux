@@ -24,3 +24,4 @@ Chaque étape faite sur le dépôt est consignée ici (date, fichier, raison).
 | 2026-11-23 | GitHub Actions | Run manuel déclenché (`gh workflow run veille-hebdo.yml`, run 45205235153) pour valider l'Action de bout en bout. | Validation avant le premier cron lundi 06h00 UTC. |
 | 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 15 candidat(s) retenu(s), 102 écarté(s), 6 alerte(s). | Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel). |
 | 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 8 candidat(s) retenu(s), 79 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel). |
+| 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 0 candidat(s) retenu(s), 26 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel). |

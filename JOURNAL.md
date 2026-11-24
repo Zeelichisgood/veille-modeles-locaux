@@ -32,3 +32,4 @@ Chaque étape faite sur le dépôt est consignée ici (date, fichier, raison).
 | 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 8 candidat(s) retenu(s), 79 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel). |
 | 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 0 candidat(s) retenu(s), 26 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron lundi 06h00 UTC ou manuel). |
 | 2026-11-23 | `rapports/2026-11-23.md` | Rapport de veille généré : 2 candidat(s) retenu(s), 25 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron mardi 03h00 UTC = 3h–6h heure française, ou manuel). |
+| 2026-11-24 | `rapports/2026-11-24.md` | Rapport de veille généré : 3 candidat(s) retenu(s), 25 écarté(s), 0 alerte(s). | Exécution hebdomadaire (cron mardi 03h00 UTC = 3h–6h heure française, ou manuel). |

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Historique des modèles déjà vus par la veille. Sert à ne signaler que les nouveautés. Ne contient aucune donnée personnelle.",
-  "derniere_mise_a_jour": "2026-11-23",
+  "derniere_mise_a_jour": "2026-11-24",
   "modeles": {
     "huggingface:1bit-MONSTER/Qwen3-4B-GGUF-loom:": {
       "statut": "ecarte",
@@ -144,6 +144,26 @@
       "source_url": "https://huggingface.co/DeepNarra/Paham-Experimental",
       "description": ""
     },
+    "huggingface:Harfusha/local-ai-hub-preprocess-qwen25-coder-3b:": {
+      "statut": "ecarte",
+      "raison": "licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "Harfusha/local-ai-hub-preprocess-qwen25-coder-3b",
+      "tag": null,
+      "taille_go": 1.93,
+      "parametres_milliards": 3.0,
+      "licence": "other",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Harfusha/local-ai-hub-preprocess-qwen25-coder-3b",
+      "description": ""
+    },
     "huggingface:Interchained/Inkling-2-Mini-GGUF:": {
       "statut": "ecarte",
       "raison": "trop gros : 17.48 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
@@ -205,6 +225,26 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/KikoCis/Qwen3.8-27B-GGUF",
+      "description": ""
+    },
+    "huggingface:Kujira/Inkling-2-Mini-CHiPS-Abliterated-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 22.87 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "Kujira/Inkling-2-Mini-CHiPS-Abliterated-GGUF",
+      "tag": null,
+      "taille_go": 22.87,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_K_XL",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/Kujira/Inkling-2-Mini-CHiPS-Abliterated-GGUF",
       "description": ""
     },
     "huggingface:Lolaoaolak/Huihui-Qwen3.8-27B-abliterated-GGUF:": {
@@ -376,6 +416,26 @@
       "source_url": "https://huggingface.co/Mikhailo/mova-tts",
       "description": ""
     },
+    "huggingface:MouseWurX/Riker-89Bob-A6B-Flash-Next-REAP70-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 45.01 Go >= 9.0 Go (budget mémoire) ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "MouseWurX/Riker-89Bob-A6B-Flash-Next-REAP70-GGUF",
+      "tag": null,
+      "taille_go": 45.01,
+      "parametres_milliards": 6.0,
+      "licence": "other",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "IQ2_XXS",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/MouseWurX/Riker-89Bob-A6B-Flash-Next-REAP70-GGUF",
+      "description": ""
+    },
     "huggingface:MrLayen/plank-designer-v4-27b:": {
       "statut": "ecarte",
       "raison": "trop gros : 22.08 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en, de)",
@@ -505,6 +565,64 @@
       "quantification": null,
       "commande_pull": null,
       "source_url": "https://huggingface.co/White-Wolf13/Xing4.0-29B-A4B-APEX-GGUF",
+      "description": ""
+    },
+    "huggingface:William-WSDS/Qwen3.5-4B-GGUF:": {
+      "statut": "vu",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "William-WSDS/Qwen3.5-4B-GGUF",
+      "tag": null,
+      "taille_go": 2.82,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/William-WSDS/Qwen3.5-4B-GGUF",
+      "description": ""
+    },
+    "huggingface:William-WSDS/Qwen3.5-9B-GGUF:": {
+      "statut": "vu",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "William-WSDS/Qwen3.5-9B-GGUF",
+      "tag": null,
+      "taille_go": 5.83,
+      "parametres_milliards": 9.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/William-WSDS/Qwen3.5-9B-GGUF",
+      "description": ""
+    },
+    "huggingface:William-WSDS/Qwen3.8-27B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 17.01 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "William-WSDS/Qwen3.8-27B-GGUF",
+      "tag": null,
+      "taille_go": 17.01,
+      "parametres_milliards": 27.0,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/William-WSDS/Qwen3.8-27B-GGUF",
       "description": ""
     },
     "huggingface:abuelos84/Spark-X2.6-4B-DSpark-Q8_0:": {
@@ -689,6 +807,29 @@
       "source_url": "https://huggingface.co/ampixa/models-nocall",
       "description": ""
     },
+    "huggingface:axom-ai/axomai-brain-progya-8b:": {
+      "statut": "ecarte",
+      "raison": "licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.) ; pas de français annoncé (langues: as, en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "axom-ai/axomai-brain-progya-8b",
+      "tag": null,
+      "taille_go": 4.92,
+      "parametres_milliards": 8.0,
+      "licence": "other",
+      "langues": [
+        "as",
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/axom-ai/axomai-brain-progya-8b",
+      "description": ""
+    },
     "huggingface:bartowski/Inkling-2-Mini-GGUF:": {
       "statut": "ecarte",
       "raison": "trop gros : 18.66 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
@@ -707,6 +848,26 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
+      "description": ""
+    },
+    "huggingface:bloomer010/Ling-3.2-air-REAP-408-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 60.43 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "bloomer010/Ling-3.2-air-REAP-408-GGUF",
+      "tag": null,
+      "taille_go": 60.43,
+      "parametres_milliards": null,
+      "licence": "mit",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/bloomer010/Ling-3.2-air-REAP-408-GGUF",
       "description": ""
     },
     "huggingface:brunuu/PequeninaLM-GGUF:": {
@@ -791,6 +952,26 @@
       "quantification": "Q8_0",
       "commande_pull": null,
       "source_url": "https://huggingface.co/dariolucas93/Qwen3-1.7B-Q8_0-GGUF",
+      "description": ""
+    },
+    "huggingface:fijam/ik_llama-IQ4_NT:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 14.48 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence 'llama3.1' non listée dans config.yaml (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "fijam/ik_llama-IQ4_NT",
+      "tag": null,
+      "taille_go": 14.48,
+      "parametres_milliards": null,
+      "licence": "llama3.1",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "IQ4_NT",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/fijam/ik_llama-IQ4_NT",
       "description": ""
     },
     "huggingface:frankmorales2020/granite-4.0-h-small-topo-triton-Q8_0-GGUF:": {
@@ -892,6 +1073,26 @@
       "source_url": "https://huggingface.co/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF",
       "description": ""
     },
+    "huggingface:kingjones777/Zenotron-Mini-0.5-Multilingual-SuperRoc-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 19.7 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "kingjones777/Zenotron-Mini-0.5-Multilingual-SuperRoc-GGUF",
+      "tag": null,
+      "taille_go": 19.7,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/kingjones777/Zenotron-Mini-0.5-Multilingual-SuperRoc-GGUF",
+      "description": ""
+    },
     "huggingface:kyssta/Qori-1:": {
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
@@ -974,6 +1175,72 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/mindsofchaos/codeoptics-coder-3b-v5",
+      "description": ""
+    },
+    "huggingface:mradermacher/AH-Mechanic-1-4B-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/AH-Mechanic-1-4B-i1-GGUF",
+      "tag": null,
+      "taille_go": 2.82,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/AH-Mechanic-1-4B-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/BLIP-Live-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 21.71 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence 'cc-by-nc-4.0' non acceptée pour un usage pro (Non commerciale : interdite pour un usage professionnel.) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/BLIP-Live-GGUF",
+      "tag": null,
+      "taille_go": 21.71,
+      "parametres_milliards": null,
+      "licence": "cc-by-nc-4.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/BLIP-Live-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/BLIP-Live-Gemma-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 16.8 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence 'cc-by-nc-4.0' non acceptée pour un usage pro (Non commerciale : interdite pour un usage professionnel.) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/BLIP-Live-Gemma-i1-GGUF",
+      "tag": null,
+      "taille_go": 16.8,
+      "parametres_milliards": null,
+      "licence": "cc-by-nc-4.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/BLIP-Live-Gemma-i1-GGUF",
       "description": ""
     },
     "huggingface:mradermacher/Behemoth_1.1_1.2_2.2_Magnum_V4-i1-GGUF:": {
@@ -1087,6 +1354,61 @@
       "source_url": "https://huggingface.co/mradermacher/Hush-Qwen2.5-7B-MST-GGUF",
       "description": ""
     },
+    "huggingface:mradermacher/JiRackUltra_7b-GGUF:": {
+      "statut": "vu",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/JiRackUltra_7b-GGUF",
+      "tag": null,
+      "taille_go": 4.68,
+      "parametres_milliards": 7.0,
+      "licence": "mit",
+      "langues": [
+        "en",
+        "zh",
+        "ja",
+        "ko",
+        "fr",
+        "es",
+        "pt",
+        "de",
+        "it",
+        "ru",
+        "ar",
+        "vi",
+        "th"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/JiRackUltra_7b-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/Juliet-Chat-mini-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/Juliet-Chat-mini-GGUF",
+      "tag": null,
+      "taille_go": 1.17,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/Juliet-Chat-mini-GGUF",
+      "description": ""
+    },
     "huggingface:mradermacher/LingSante-3.1-air-VL-i1-GGUF:": {
       "statut": "ecarte",
       "raison": "trop gros : 75.28 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
@@ -1153,6 +1475,72 @@
       "source_url": "https://huggingface.co/mradermacher/Lythri-Tada-4B-i1-GGUF",
       "description": ""
     },
+    "huggingface:mradermacher/MFANN-SFT-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/MFANN-SFT-GGUF",
+      "tag": null,
+      "taille_go": 4.92,
+      "parametres_milliards": null,
+      "licence": null,
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/MFANN-SFT-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/MT3-Gen5-GP-gemma-2-RAv0.1E-9B_v1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/MT3-Gen5-GP-gemma-2-RAv0.1E-9B_v1-GGUF",
+      "tag": null,
+      "taille_go": 5.76,
+      "parametres_milliards": 9.0,
+      "licence": null,
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/MT3-Gen5-GP-gemma-2-RAv0.1E-9B_v1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF",
+      "tag": null,
+      "taille_go": 2.74,
+      "parametres_milliards": null,
+      "licence": "mit",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF",
+      "description": ""
+    },
     "huggingface:mradermacher/Qwen3.8-27B-Uncensored-v3-i1-GGUF:": {
       "statut": "ecarte",
       "raison": "trop gros : 16.55 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: en)",
@@ -1197,6 +1585,69 @@
       "source_url": "https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF",
       "description": ""
     },
+    "huggingface:mradermacher/WeMM-Ecom-4B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/WeMM-Ecom-4B-GGUF",
+      "tag": null,
+      "taille_go": 0.67,
+      "parametres_milliards": 4.0,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/WeMM-Ecom-4B-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/WeMM-Ecom-9B-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: zh, en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/WeMM-Ecom-9B-GGUF",
+      "tag": null,
+      "taille_go": 5.68,
+      "parametres_milliards": 9.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "zh",
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/WeMM-Ecom-9B-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/WeMM-Ecom-9B-i1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "licence inconnue (règle par défaut : refuser)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/WeMM-Ecom-9B-i1-GGUF",
+      "tag": null,
+      "taille_go": 5.68,
+      "parametres_milliards": 9.0,
+      "licence": null,
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/WeMM-Ecom-9B-i1-GGUF",
+      "description": ""
+    },
     "huggingface:mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF:": {
       "statut": "ecarte",
       "raison": "trop gros : 16.8 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md) ; licence inconnue (règle par défaut : refuser) ; pas de français annoncé (langues: en)",
@@ -1217,6 +1668,28 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-v3.0-Final-i1-GGUF",
+      "description": ""
+    },
+    "huggingface:mradermacher/dqnGPT-v1-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "mradermacher/dqnGPT-v1-GGUF",
+      "tag": null,
+      "taille_go": 5.34,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/mradermacher/dqnGPT-v1-GGUF",
       "description": ""
     },
     "huggingface:mradermacher/krx-q25-7b-sft-v2-GGUF:": {
@@ -1303,6 +1776,28 @@
       "quantification": null,
       "commande_pull": null,
       "source_url": "https://huggingface.co/mrsirg97-rgb/osmos1.7b",
+      "description": ""
+    },
+    "huggingface:nandangowda/supermart-slm:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "nandangowda/supermart-slm",
+      "tag": null,
+      "taille_go": 0.37,
+      "parametres_milliards": null,
+      "licence": "other",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q8_0",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/nandangowda/supermart-slm",
       "description": ""
     },
     "huggingface:nihalmotukuri/actuator-7b-gguf:": {
@@ -1433,6 +1928,70 @@
       "source_url": "https://huggingface.co/opirs/OPIRS-Child-0.9-Workstation-GGUF",
       "description": ""
     },
+    "huggingface:patrickbdevaney/GLM-5.3-Flash-prune-vs-quant-matched-bytes:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 106.62 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "patrickbdevaney/GLM-5.3-Flash-prune-vs-quant-matched-bytes",
+      "tag": null,
+      "taille_go": 106.62,
+      "parametres_milliards": null,
+      "licence": "mit",
+      "langues": [],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-prune-vs-quant-matched-bytes",
+      "description": ""
+    },
+    "huggingface:prithivMLmods/CCORE-Web-Coder-4B-MTP-GGUF:": {
+      "statut": "ecarte",
+      "raison": "pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "prithivMLmods/CCORE-Web-Coder-4B-MTP-GGUF",
+      "tag": null,
+      "taille_go": 2.82,
+      "parametres_milliards": 4.0,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/prithivMLmods/CCORE-Web-Coder-4B-MTP-GGUF",
+      "description": ""
+    },
+    "huggingface:prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF:": {
+      "statut": "ecarte",
+      "raison": "trop gros : 124.05 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé ; licence 'other' non acceptée pour un usage pro (Licence non reconnue : refusée par prudence.) ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF",
+      "tag": null,
+      "taille_go": 124.05,
+      "parametres_milliards": null,
+      "licence": "other",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": null,
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/prithivMLmods/Qwen3.8-Flash-Next-abliterated-MXFP4-MoE-GGUF",
+      "description": ""
+    },
     "huggingface:protocolsyncllc/medgap-qwen-3.5-9b:": {
       "statut": "ecarte",
       "raison": "trop gros : 9.79 Go >= 9.0 Go (budget mémoire) ; pas de français annoncé (langues: en)",
@@ -1495,6 +2054,28 @@
       "quantification": "Q4_K_M",
       "commande_pull": null,
       "source_url": "https://huggingface.co/radiosilent/mbe-gemma4-26b-sysml",
+      "description": ""
+    },
+    "huggingface:respinosamena/Thirty-30M-Instruct-GGUF:": {
+      "statut": "ecarte",
+      "raison": "nombre de paramètres non déterminé ; pas de français annoncé (langues: en)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "huggingface",
+      "nom": "respinosamena/Thirty-30M-Instruct-GGUF",
+      "tag": null,
+      "taille_go": 0.02,
+      "parametres_milliards": null,
+      "licence": "apache-2.0",
+      "langues": [
+        "en"
+      ],
+      "formats": [
+        "gguf"
+      ],
+      "quantification": "Q4_K_M",
+      "commande_pull": null,
+      "source_url": "https://huggingface.co/respinosamena/Thirty-30M-Instruct-GGUF",
       "description": ""
     },
     "huggingface:salgr/SalgrAI_v2.1:": {
@@ -1607,7 +2188,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md) ; pas de français annoncé (langues: zh, en)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "huggingface",
       "nom": "tencent/WeMM-Ecom-2B-GGUF",
       "tag": null,
@@ -1630,7 +2211,7 @@
       "statut": "ecarte",
       "raison": "pas de français annoncé (langues: zh, en)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "huggingface",
       "nom": "tencent/WeMM-Ecom-4B-GGUF",
       "tag": null,
@@ -1653,7 +2234,7 @@
       "statut": "ecarte",
       "raison": "pas de français annoncé (langues: zh, en)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "huggingface",
       "nom": "tencent/WeMM-Ecom-9B-GGUF",
       "tag": null,
@@ -1778,7 +2359,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 26.0 Go >= 9.0 Go (budget mémoire) ; hors tranche : 35.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "autotrust-jev",
       "tag": "35b",
@@ -1798,7 +2379,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 11.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "autotrust-jev",
       "tag": "latest",
@@ -1818,7 +2399,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "beam",
       "tag": null,
@@ -1838,7 +2419,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 27.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "bonsai-2",
       "tag": "27b",
@@ -1858,7 +2439,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "bonsai-2",
       "tag": "2b",
@@ -1877,7 +2458,7 @@
     "ollama:bonsai-2:4b": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "bonsai-2",
       "tag": "4b",
@@ -1897,7 +2478,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "bonsai-2",
       "tag": "latest",
@@ -1917,7 +2498,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d1-omni",
       "tag": "2b",
@@ -1937,7 +2518,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d1-omni",
       "tag": "latest",
@@ -1957,7 +2538,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d1",
       "tag": "2b",
@@ -1977,7 +2558,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d1",
       "tag": "latest",
@@ -1997,7 +2578,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 29.0 Go >= 9.0 Go (budget mémoire) ; hors tranche : 27.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d3",
       "tag": "27b",
@@ -2017,7 +2598,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 2.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d3",
       "tag": "2b",
@@ -2037,7 +2618,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 10.0 Go >= 9.0 Go (budget mémoire)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d3",
       "tag": "9b",
@@ -2057,7 +2638,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "d3",
       "tag": "latest",
@@ -2077,7 +2658,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 23.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "flint",
       "tag": "latest",
@@ -2107,7 +2688,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "hy4",
       "tag": null,
@@ -2127,7 +2708,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 20.0 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "inkling-2-mini",
       "tag": "26b-a5b",
@@ -2143,11 +2724,31 @@
       "source_url": "https://ollama.com/library/inkling-2-mini",
       "description": ""
     },
+    "ollama:inkling-2-mini:26b-a5b-iq4_NL": {
+      "statut": "ecarte",
+      "raison": "trop gros : 18.0 Go >= 9.0 Go (budget mémoire) ; hors tranche : 26.0 Md (attendu 3.0–14.0 Md)",
+      "premiere_observation": "2026-11-24",
+      "vu_le": "2026-11-24",
+      "source": "ollama",
+      "nom": "inkling-2-mini",
+      "tag": "26b-a5b-iq4_NL",
+      "taille_go": 18.0,
+      "parametres_milliards": 26.0,
+      "licence": "mit",
+      "langues": [],
+      "formats": [
+        "ollama"
+      ],
+      "quantification": "IQ4_NL",
+      "commande_pull": "ollama pull inkling-2-mini:26b-a5b-iq4_NL",
+      "source_url": "https://ollama.com/library/inkling-2-mini",
+      "description": ""
+    },
     "ollama:inkling-2-mini:latest": {
       "statut": "ecarte",
       "raison": "trop gros : 20.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "inkling-2-mini",
       "tag": "latest",
@@ -2167,7 +2768,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "inkling-2-small",
       "tag": null,
@@ -2187,7 +2788,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 0.8 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "0.8b-bf16",
@@ -2207,7 +2808,7 @@
       "statut": "ecarte",
       "raison": "hors tranche : 0.8 Md (attendu 3.0–14.0 Md)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "0.8b-q8_0",
@@ -2226,7 +2827,7 @@
     "ollama:kev:4b-bf16": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "4b-bf16",
@@ -2245,7 +2846,7 @@
     "ollama:kev:4b-q4_K_M": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "4b-q4_K_M",
@@ -2264,7 +2865,7 @@
     "ollama:kev:4b-q8_0": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "4b-q8_0",
@@ -2284,7 +2885,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 18.0 Go >= 9.0 Go (budget mémoire)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "9b-bf16",
@@ -2303,7 +2904,7 @@
     "ollama:kev:9b-q4_K_M": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "9b-q4_K_M",
@@ -2323,7 +2924,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 9.5 Go >= 9.0 Go (budget mémoire)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "9b-q8_0",
@@ -2343,7 +2944,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kev",
       "tag": "latest",
@@ -2363,7 +2964,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "kimi-k3.1-pro",
       "tag": null,
@@ -2383,7 +2984,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "lfm3-audio",
       "tag": "latest",
@@ -2403,7 +3004,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "lfm3-omni",
       "tag": "latest",
@@ -2423,7 +3024,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "lfm3-vl",
       "tag": "latest",
@@ -2443,7 +3044,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "lfm3",
       "tag": "latest",
@@ -2463,7 +3064,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "mimo-v2.6",
       "tag": "latest",
@@ -2483,7 +3084,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "minimax-m3.1-flash",
       "tag": null,
@@ -2513,7 +3114,7 @@
       "statut": "ecarte",
       "raison": "taille du fichier quantifié non déterminée ; nombre de paramètres non déterminé ; licence inconnue (règle par défaut : refuser)",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "muse-spark-open",
       "tag": null,
@@ -2532,7 +3133,7 @@
     "ollama:nemotron-3.5-bolt:e4b": {
       "statut": "vu",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "nemotron-3.5-bolt",
       "tag": "e4b",
@@ -2552,7 +3153,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 25.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "nemotron-3.5-bolt",
       "tag": "latest",
@@ -2572,7 +3173,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 9.3 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "nimble-v3",
       "tag": "latest",
@@ -2612,7 +3213,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "31m-en",
@@ -2632,7 +3233,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-de",
@@ -2652,7 +3253,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-en",
@@ -2672,7 +3273,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-es",
@@ -2692,7 +3293,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-fr",
@@ -2712,7 +3313,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-multilingual",
@@ -2732,7 +3333,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "40m-pt",
@@ -2752,7 +3353,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "de",
@@ -2772,7 +3373,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "en",
@@ -2792,7 +3393,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "es",
@@ -2812,7 +3413,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "fr",
@@ -2832,7 +3433,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "latest",
@@ -2852,7 +3453,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "multilingual",
@@ -2872,7 +3473,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "phonon",
       "tag": "pt",
@@ -2892,7 +3493,7 @@
       "statut": "ecarte",
       "raison": "nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "pplx-decider-flash",
       "tag": "latest",
@@ -2912,7 +3513,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 17.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "pplx-decider",
       "tag": "latest",
@@ -2952,7 +3553,7 @@
       "statut": "ecarte",
       "raison": "trop gros : 39.0 Go >= 9.0 Go (budget mémoire) ; nombre de paramètres non déterminé",
       "premiere_observation": "2026-11-23",
-      "vu_le": "2026-11-23",
+      "vu_le": "2026-11-24",
       "source": "ollama",
       "nom": "ripple-preview",
       "tag": "latest",
